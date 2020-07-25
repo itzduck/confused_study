@@ -1,63 +1,68 @@
-#[EACH]Percorre ma coleção de forma parecida ao [for], porém, não sobrescrevendo o valor de variáveis fora da estrutura de repetição.
-names = ['Rafael', 'Donatelo', 'Leonardo']
+# [EACH] Cycles through the collection in a 
+#similar way to [for], but does not overwrite 
+#the value of variables outside the repetition structure.
+names = ['Raphael', 'Donatello', 'Leonardo']
 
-name = 'Miquelangelo'
-names.each do |name|
-    puts name + ' [is a ninja turtle]'
+name = 'Michellangelo'
+names.each do | name |
+    puts name + '[is a ninja turtle]'
 end
-puts name + ' [it is also]'
+puts name + '[it is also]'
 puts "_____________EACH HASH_______________"
 
-aulas = {'Class 1' => 'Open','Class 2' => 'Open','Class 3' => 'Open','Class 4' => 'Open','Class 5' => 'Coming Soon',}
-aulas.each do |key, value|
-    puts "#{key} #{value}"
+classes = {'Class 1' => 'Open', 'Class 2' => 'Open', 'Class 3' => 'Open', 'Class 4' => 'Open', 'Class 5' => ' Coming Soon ',}
+classes.each do | key, value |
+    puts "# {key} # {value}"
 end
 puts "++++++++++++++++++++++++++++++++++++++"
-#[MAP] Cria um array baseando-se em valores de outro array existente
+# [MAP] Create an array based on values ​​from another existing array
 
-array = [1, 2, 3, 4] 
-# \n é uma quebra de linha 
-puts "\n Executando .map multiplicando cada  item por 2"
-new_array = array.map do |a|
+array = [1, 2, 3, 4]
+# \ n is a line break
+puts "\ n Executing .map by multiplying each item by 2"
+new_array = array.map do | a |
     a * 2
 end
 
-puts "\n Original Array"
-puts "#{array}"
+puts "\ n Original Array"
+puts "# {array}"
 
-puts "\n New Array"
-puts " #{new_array}"
+puts "\ n New Array"
+puts "# {new_array}"
 
-puts "\n Executando .map! multiplicando casa item por 2"
-# .map! força que o conteúdo do array original seja alterado 
-array.map! do |a|
+puts "\ n Executing .map! multiplying each item by 2"
+# .map! forces the contents of the original array to be changed
+array.map! do | a |
     a * 2
 end
 
-puts "\n Original Array"
-puts "#{new_array}"
-puts " "
+puts "\ n Original Array"
+puts "# {new_array}"
+puts ""
 
 puts "++++++++++++++++++++++++++++++++++++++"
 
-#[SELECT]Realiza um seleção de elementos presentes em uma collection através de uma condição pré definida.Traz como resultado somente os valores que passam nesta condição
+# [SELECT] Performs a selection of elements present in a collection 
+#through a pre-defined condition. As a result, only the values ​​that 
+#pass in this condition
 
 array = [1, 2, 3, 4, 5, 6]
 
-selection = array.select do |a|
-    a >= 4
+selection = array.select do | a |
+    a> = 4
 end
 
 puts selection
 
 puts "++++++++++++++++++++++++++++++++++++++"
 
-#Select com Hashes
+#Select with Hashes
 
-hash = {0 => 'zero', 1 => 'um', 2 => 'dois', 3 => 'três'}
+hash = {0 => 'zero', 1 => 'one', 2 => 'two', 3 => 'three'}
 
-puts 'Selecionando keys com valor maior que 0'
-selection_key = hash.select do |key, value|
-    key > 0
+puts 'Selecting keys greater than 0'
+selection_key = hash.select do | key, value |
+    key> 0
 end
 puts selection_key
+
