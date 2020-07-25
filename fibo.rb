@@ -1,24 +1,24 @@
-#n = 50
+n = 50
 
-#if n == 1 or n ==2
- #   return 1
-#else
-  #  return fibonacci(n - 1) + fibonacci (n -2)
+if n == 1 or n ==2
+    return 1
+else
+    return fibonacci(n - 1) + fibonacci (n -2)
 
-#for i++
- #   puts fibonacci(I)
-#end
+for i++
+   puts fibonacci(I)
+end
 
 
-#def fibonacci
- #   n1, n2, i = -1, 0, 1
-#   while i.to_s.length < 25
- #       n1 += 1
-  #      i, n2 = n2, n2 +1
-   # end
-    #n1
-#end
-#puts fibonacci
+def fibonacci
+    n1, n2, i = -1, 0, 1
+   while i.to_s.length < 25
+        n1 += 1
+        i, n2 = n2, n2 +1
+    end
+    n1
+end
+puts fibonacci
 
 sum = 0
 n1 = 1
