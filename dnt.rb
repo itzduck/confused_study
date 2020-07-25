@@ -15,9 +15,9 @@ def my_os
  
  else
  
-   "Não consegui identificar" 
+   "Could not identify" 
  end
  
 end
  
-puts "Meu PC possui #{OS.cpu_count} cores, é #{OS.bits} bits e o sistema operacional é #{my_os}"
+puts "My PC has #{OS.cpu_count} colors, it's #{OS.bits} bits and the operating system is #{my_os}"
