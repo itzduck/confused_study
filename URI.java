@@ -14,7 +14,6 @@ public class Main {
 		soma = a + b;
 		System.out.println("X = "+soma);
     }
-
 #======================
 1002
 import java.io.IOException;
@@ -28,7 +27,6 @@ public class Main {
 		area = 3.14159 * (raio * raio);
 		System.out.printf("A=%.4f\n", area); 
     }
- 
 }
 
 #======================
@@ -46,9 +44,7 @@ public class Main {
 		b = scan.nextInt();
 		soma = a + b;
 		System.out.println("SOMA = "+soma);
- 
     }
- 
 }
 
 #======================
@@ -66,9 +62,7 @@ public class Main {
 		b = scan.nextInt();
 		soma = a * b;
 		System.out.println("PROD = "+soma);
- 
     }
- 
 }
 
 #======================
@@ -84,8 +78,7 @@ public class Main {
 		double b = sc.nextDouble();
 		double md = ((a * 3.5) + (b * 7.5)) / 11; 
 		System.out.printf("MEDIA = %.5f\n", md);
-    }
- 
+    } 
 }
 
 #======================
@@ -102,8 +95,7 @@ public class Main {
 		double md = ((a * 2) + (b * 3) + (c * 5)) /10.0; 
 		System.out.printf("MEDIA = %.1f%n", md);
  
-    }
- 
+    } 
 }
 
 #======================
@@ -122,7 +114,6 @@ public class Main {
 		int dif = (a * b - c * d);
 		System.out.println("DIFERENCA = "+dif);
     }
- 
 }
 
 #======================
@@ -234,7 +225,6 @@ public class Main {
 		int maiorABC = (maiorAB + C + Math.abs(maiorAB - C)) / 2;
 
 		System.out.println(maiorABC + " eh o maior");
-
 		sc.close();
 	}
 }
@@ -273,8 +263,7 @@ public class Main {
         double y2 = sc.nextDouble();
         
         double Dxy = Math.sqrt( Math.pow(x2 - x1, 2)+ Math.pow(y2 - y1, 2));
-        System.out.printf("%.4f%n", Dxy);
-        
+        System.out.printf("%.4f%n", Dxy);       
         sc.close();
     } 
 }
@@ -286,8 +275,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
        
-        Scanner sc = new Scanner(System.in);
-        
+        Scanner sc = new Scanner(System.in);       
         int x = sc.nextInt();
         System.out.println(x*2 +" minutos");        
     }   
@@ -345,16 +333,12 @@ public class Main {
        
         Scanner sc = new Scanner(System.in);
         
-        int n = sc.nextInt();
-        
+        int n = sc.nextInt();       
         int horas = n / 3600;
-        n = n % 3600;
-        
+        n = n % 3600;  
         int minutos = n/60;
-        n = n%60;
-        
+        n = n%60;       
         int segundos = n;
-        
         System.out.println(horas+":"+minutos+":"+segundos);
     }
     }
@@ -367,16 +351,12 @@ public class Main {
        
         Scanner sc = new Scanner(System.in);
         
-        int n = sc.nextInt();
-        
+        int n = sc.nextInt();        
         int ano = n / 365;
-        n = n % 365;
-        
+        n = n % 365;       
         int meses = n/30;
-        n = n%30;
-        
-        int dias = n;
-        
+        n = n%30;        
+        int dias = n;        
         System.out.println(ano+" ano(s)");
         System.out.println(meses+" mes(es)");
         System.out.println(dias+" dia(s)");         
